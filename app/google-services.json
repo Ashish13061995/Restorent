@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "931362504789",
+    "firebase_url": "https://restorent-1332f.firebaseio.com",
+    "project_id": "restorent-1332f",
+    "storage_bucket": "restorent-1332f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931362504789:android:977c19ff4d095ada3ed4dc",
+        "android_client_info": {
+          "package_name": "com.awesome.hp.restorent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931362504789-scvn1jgegq7esem40njea8lmqjc40l6a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.awesome.hp.restorent",
+            "certificate_hash": "335f4cdb6e894bcd2d98779113f4f89cfabea896"
+          }
+        },
+        {
+          "client_id": "931362504789-36riso16pc5scehne8luiiitj94j0i2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH-rDbRSHMPAtUgPeGR4KO5JzRZ1vjtzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931362504789-36riso16pc5scehne8luiiitj94j0i2f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

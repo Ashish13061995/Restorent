@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/coffie_image"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+        <!--progress bar-->
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/progressBarLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:visibility="gone">-->
+
+            <!--<ProgressBar-->
+                <!--android:id="@+id/progressBar"-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:max="100"-->
+                <!--android:progress="50"-->
+                <!--android:progressDrawable="@drawable/circular"-->
+                <!--style="?android:attr/progressBarStyleHorizontal"-->
+                <!--android:indeterminate="true"-->
+                <!--android:secondaryProgress="100"-->
+                <!--/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="22dp"-->
+                <!--android:layout_height="18dp"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@drawable/applogo1"/>-->
+
+        <!--</RelativeLayout>-->
+
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="8dp"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"
+        android:src="@drawable/applogo1" />
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <requestFocus/>
+
+        <ImageView
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_gravity="bottom"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/user" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="@color/colorPrimary">
+
+            <EditText
+                android:id="@+id/numberId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/nameText"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:textSize="15sp" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_gravity="bottom"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/password" />
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="@color/colorPrimary">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/nameText"
+                android:hint="password"
+                android:maxLength="15"
+                android:inputType="textPassword|textCapSentences"
+                android:textSize="15sp" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:gravity="end"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you are not register"
+        android:textSize="12sp"
+        android:layout_gravity="end"/>
+
+    <TextView
+        android:layout_marginStart="7dp"
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/signup"
+        android:textSize="12sp"
+        android:layout_gravity="end"/>
+</LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="14sp"
+        android:text="Login"
+        android:background="@drawable/button_pressed"
+        android:ems="7"
+        android:textColor="@color/white"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+</LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+
+

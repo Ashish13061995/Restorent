@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="List" />
+
+    <LinearLayout
+        android:id="@+id/custom_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:text="RestaUnity"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:text="Who are logged in "
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="220dp">
+
+    <ImageView
+        android:id="@+id/backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coffie_image" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/profile_image"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:src="@drawable/no_image"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+    <TextView
+        android:layout_below="@+id/profile_image"
+        android:layout_marginStart="10dp"
+        android:text="Order History"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:shadowColor="@color/black"
+        android:shadowDy="2"
+        android:shadowDx="2"
+        android:shadowRadius="2"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_margin="@dimen/dimen_5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+           <RelativeLayout
+               android:id="@+id/orderHistoryLayout"
+               android:layout_margin="@dimen/dimen_5dp"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <TextView
+                   android:layout_marginStart="10dp"
+                   android:text="Order History"
+                   android:textSize="19dp"
+                   android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                   android:layout_height="match_parent" />
+               <ImageView
+                   app:srcCompat="@drawable/ic_history_24dp"
+                  android:layout_alignParentEnd="true"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp" />
+           </RelativeLayout>
+<View
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/grey"/>
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_margin="@dimen/dimen_5dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+
+                <!--<TextView-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:text="About us"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_height="match_parent" />-->
+                <!--<ImageView-->
+                    <!--app:srcCompat="@drawable/about_us"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_width="35dp"-->
+                    <!--android:layout_height="35dp" />-->
+            <!--</RelativeLayout>-->
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/grey"/>-->
+
+
+            <RelativeLayout
+                android:layout_margin="@dimen/dimen_5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:text="Change Password"
+                    android:textSize="19dp"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    app:srcCompat="@drawable/ic_vpn_key_"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <RelativeLayout
+                android:layout_margin="@dimen/dimen_5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:text="About us"
+                    android:textSize="19dp"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    app:srcCompat="@drawable/ic_send_black_24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+
+            <RelativeLayout
+            android:layout_margin="@dimen/dimen_5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+            android:layout_marginStart="10dp"
+            android:text="Log out"
+            android:textSize="19dp"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent" />
+            <ImageView
+            app:srcCompat="@drawable/ic_logout"
+            android:layout_alignParentEnd="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

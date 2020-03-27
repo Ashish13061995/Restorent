@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/coffie_image"
+    tools:context=".SelectChoice">
+
+    <android.support.v7.widget.CardView
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:src="@drawable/applogo1" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I Am"/>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_user"
+            android:textSize="14sp"
+            android:text="User"
+            android:background="@drawable/buttonshape"
+            android:ems="7"
+            android:textColor="@color/colorPrimary"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:textAllCaps="false"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            />
+
+        <Button
+            android:id="@+id/btn_restaurent"
+            android:textSize="14sp"
+            android:text="Restaurant"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/buttonshape"
+            android:ems="7"
+            android:paddingLeft="@dimen/dimen_5dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:textAllCaps="false"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </LinearLayout>
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:textSize="9sp"
+                android:layout_width="200dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="When you are going to select one option, you have open perticular Registration"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

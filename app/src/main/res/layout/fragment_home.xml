@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Home_Fragment">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginStart="13dp"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:text="RestaUnity"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_marginStart="13dp"
+        android:textSize="10dp"
+        android:textColor="@color/white"
+        android:text="You can find best Restaurent here..."/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/search_bg"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:id="@+id/menulogo"
+            android:elevation="10dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/applogo1"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="35dp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_toRightOf="@+id/menulogo"
+            android:layout_height="match_parent"/>
+
+
+        <ImageView
+
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/search"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Restaurants.."
+            android:layout_centerHorizontal="true"
+            android:id="@+id/searchtxt"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/menulogo"
+            android:layout_toStartOf="@+id/search"
+            android:gravity="start"
+            android:layout_marginStart="10sp"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+       android:layout_margin="10dp"
+        android:elevation="0dp"
+        android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" />
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="130dp"
+        android:padding="10dip"
+        app:centered="true"
+        app:fillColor="#5e5e5e"
+        app:pageColor="#dcdcdc"
+        app:snap="false" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_scroll"
+            android:gravity="start"
+            android:layout_marginStart="12dp"
+            android:textSize="11sp"
+            android:text="Find Restaurents Here...!">
+
+        </TextView>
+
+    <ListView
+        android:paddingTop="10dp"
+        android:paddingBottom="50dp"
+        android:id="@+id/list"
+        android:divider="#00ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+</FrameLayout>
