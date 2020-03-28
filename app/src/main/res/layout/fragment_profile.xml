@@ -179,6 +179,7 @@
                 android:background="@color/grey"/>
 
             <RelativeLayout
+                android:id="@+id/aboutUsRelativeLayout"
                 android:layout_margin="@dimen/dimen_5dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -207,6 +208,7 @@
 
 
             <RelativeLayout
+            android:id="@+id/logoutLayout"
             android:layout_margin="@dimen/dimen_5dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"

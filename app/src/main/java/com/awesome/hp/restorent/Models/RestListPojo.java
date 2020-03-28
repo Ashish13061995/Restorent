@@ -2,7 +2,7 @@ package com.awesome.hp.restorent.Models;
 
 import com.google.firebase.firestore.Exclude;
 
-public class Resta_List_Pojo {
+public class RestListPojo {
 
     @Exclude
     private String id;
@@ -10,14 +10,6 @@ public class Resta_List_Pojo {
     int image;
     String name, subTitle, location;
 
-
-
-    public Resta_List_Pojo(int image, String name, String subTitle, String location) {
-        this.image = image;
-        this.name = name;
-        this.subTitle = subTitle;
-        this.location=location;
-    }
 
     public String getId() {
         return id;
